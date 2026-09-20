@@ -1,0 +1,55 @@
+# Editor and operating-system state
+.idea/
+.vscode/
+.DS_Store
+*.swp
+*.tmp
+
+# Environment files and secrets (keep public templates)
+.env*
+!.env.example
+!frontend/.env.example
+.streamlit/secrets.toml
+
+# Python environments, bytecode, tests, and coverage
+.venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Node dependencies, framework output, builds, tests, and coverage
+node_modules/
+.next/
+out/
+dist/
+build/
+*.tsbuildinfo
+test-results/
+playwright-report/
+coverage/
+
+# Runtime and temporary content
+*.log
+*.db
+*.sqlite
+*.sqlite3
+uploads/
+tmp/
+temp/
+ocr-temp/
+
+# Datasets remain local pending redistribution clearance
+data/raw/
+data/processed/
+# Derived email text remains excluded pending a complete privacy review.
+data/processed/email_*
+
+# Until publication rights are resolved, exclude the complete artifacts tree.
+artifacts/
+
+# Local integrity manifests
+.audit/
